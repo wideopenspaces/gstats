@@ -7,10 +7,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "gstats"
-    s.summary = %Q{TODO}
+    s.summary = %Q{Helper for Google Analytics!}
     s.email = "jake@wideopenspac.es"
     s.homepage = "http://github.com/wideopenspaces/gstats"
-    s.description = "TODO"
+    s.description = "Helper for Google Analytics!"
     s.authors = ["Jacob Stetser"]
   end
 rescue LoadError
