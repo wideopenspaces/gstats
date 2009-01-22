@@ -49,10 +49,11 @@ module GoogleStatsHelper
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
       </script>
       <script type="text/javascript">
+      try {     
       var pageTracker = _gat._getTracker("#{GStats.analytics_account}");
       pageTracker._initData();
       #{get_trackers}
-      </script>
+      } catch(err) {}</script>
       <!-- End Google Analytics  tag -->
     EOT
   end

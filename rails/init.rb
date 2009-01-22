@@ -19,7 +19,6 @@
 # SOFTWARE.
 
 require 'gstats'
-
-class ActionView::Base
-	include GoogleStatsHelper
+ActionView::Base.class_eval do
+  include GoogleStatsHelper
 end
